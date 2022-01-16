@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpoint" content="width=device-width, initial-scaled=1.0">
+        <title>Homework</title>
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+  <!--          <style>
+             div{
+                border-style:solid;
+                border-color: black;
+                padding: 5px;
+                margin: 5px;
+            }
+        </style>  -->
+    
+    </head>
+<!-- a. A Bootstrap navbar-->
+    <body class="container">
+
+         <nav class="navbar-expand-sm navbar-dark bg-dark p-2 my-2">
+            <a class="navbar-brand" href="index.html">A Bootstrap Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <!--d. At least 2 pages-->
+                    <a class="nav-link" href="bootstrap.html">The Button Page</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Not a real link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Also not a real link</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarNavDropdownMenuLink" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropDownMenuLink">
+                   <a class="dropdown-item" href="#">Item One</a>
+                   <a class="dropdown-item" href="#">Item Two</a>
+                   <a class="dropdown-item" href="#">Item Three</a>
+                </div>
+
+                </li>
+            </ul>
+        </div>
+            </nav>
+
+ <!--This was done in the videos, but not used for the coding assignment. 
+             <div class="alert alert-primary">
+            Primary
+        </div>
+
+        <div class="alert alert-secondary">
+            Secondary
+        </div>
+
+        <div class="alert alert-success">
+            Success!!!
+        </div>
+
+        <div class="alert alert-danger">
+            Danger!!!
+        </div>
+
+        <div class="alert alert-warning">
+            This is a warning.
+        </div>
+        <button class="btn btn-info">
+            Notifications <span class="badge badge-secondary">5</span>
+        </button> -->
+
+
+        <!--b. A Bootstrap styled table-->
+        <div class="container">
+
+        <h3>What's at Amy's Table <span class="badge badge-primary"></span></h3>
+
+        <table class="table table-light table-hover">
+            <tr>
+                <th>Foods I like</th>
+                <th>Foods I dislike</th>    
+            </tr>
+            <tr>
+                <td>Peppers</td>
+                <td>Mushrooms</td>
+               
+            </tr>
+            <tr>
+                <td>Pizza</td>
+                <td>Pepperoni</td>
+                
+            </tr> <tr>
+                <td>Chicken burritos</td>
+                <td>Shrimp Tacos</td>
+                
+            </tr> <tr>
+                <td>Chocolate Chip Cookies</td>
+                <td>Oatmeal Cookies</td>
+                
+            </tr>
+
+        </table>
+    </div>
+</div>
+ 
+<!--c. A Bootstrap styled form-->
+        <div class="container">
+            <h2>a Bootstrap styled form</h2>
+            <form class="form-group" action="/action_page.php">
+              <div class="form-group">
+                <label class="control-label" for="email">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+              </div>
+              <div class="form-group">
+                <label class="control-label" for="pwd">Password:</label>
+                <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+              </div>
+              <div class="checkbox">
+                <label><input type="checkbox" name="remember"> Remember me</label>
+              </div>
+              <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+          </div> 
+
+        <!-- size of columns can be auto, sm, md, lg, xl>1200 & XXL>1400. Size relates to screen size they are being viewed on. 1140px. 576 px size will let even small size stay next to each other.
+          <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                Hello World
+            </div>
+            <div class="col-sm">
+                content
+            </div>
+            <div class="col-sm">
+                Hello World
+            </div>
+            </div>
+        </div>
+
+        <div class="container-fluid"></div>
+        <div class="row">
+            <div class="col-lg-4">
+            Hello World
+        </div>
+        <div class="col-sm">
+            Hello World
+        </div>
+        <div class="col-sm">
+            Hello World
+
+        </div>
+        </div>
+    </div>  -->
+
+    <div class="container-fluid mt-3">
+        <h1>My Columns</h1>
+        <p>Resize the browser window to see the effect.</p>
+        <p>The columns will automatically stack on top of each other when the screen is less than 576px wide.</p>
+        <div class="row">
+          <div class="col-sm-3 p-3 bg-primary text-white">3</div>
+          <div class="col-sm-6 p-3 bg-dark text-white">6</div>
+            
+          <div class="col-sm-3 p-3 bg-primary text-white">3</div>
+          
+        </div>
+      </div>
+
+     <br><br>
+
+     <div class="container-fluid mt-3">
+        <div class="row">
+        <div class="col-sm-3 bg-success p-4">25% width of screen</div>
+          <div class="col-sm-6 bg-warning p-4">
+            50% width of screen
+            <div class="row">
+              <div class="col-sm-8 bg-light p-3">75% width of parent</div>
+              <div class="col-sm-4 bg-secondary p-3">25% width of parent</div>
+            </div>
+          </div>
+          <div class="col-sm-3 bg-success p-4">25% width of screen</div>
+        </div>
+      </div>
+
+        <script src="node_modules/jquery/dist/jquery.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    </body>
+</html>
